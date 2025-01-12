@@ -1,36 +1,33 @@
 package tests;
 
 import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterTest;
 
-//import org.testng.annotations.AfterClass;
-//import org.testng.annotations.BeforeClass;
-//import org.testng.annotations.Test;
-//
-//import com.aventstack.extentreports.ExtentReports;
-//import com.aventstack.extentreports.ExtentTest;
-//import com.aventstack.extentreports.Status;
-//import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+public class Reports {
 
-public class Reports{
-	
-	public void loging(String log1) 
-	{
-	ExtentReports extent = new ExtentReports();
-	ExtentSparkReporter spark = new ExtentSparkReporter("./test-output/Reports_results/SparkFail.html");
-	extent.attachReporter(spark);
-	extent.createTest("MyFirstTest")
-	  .log(Status.PASS, log1);
-	extent.flush();
-	
-//    ExtentSparkReporter sparkReporter = new ExtentSparkReporter("test-output/ExtentReport.html");
-//
-//    // Create ExtentReports instance
-//    extent = new ExtentReports();
-//
-//    // Attach the reporter
-//    extent.attachReporter(sparkReporter);
-	}
-
+    // Shared ExtentReports object
+    protected static ExtentReports extent;
+    
+    @BeforeTest
+    public void setUp() {
+        if (extent == null) {
+            // Initialize ExtentReports only once
+        	BaseClass base = new BaseClass();
+            String reportPath = "./test-output/Reports_results/"+base.timestampprinter()+"/extent.html";
+            ExtentSparkReporter sparkReporter = new ExtentSparkReporter(reportPath);
+            
+            // Initialize the ExtentReports object
+            extent = new ExtentReports();
+            extent.attachReporter(sparkReporter);
+        }
+    }
+    
+    @AfterTest
+    public void tearDown() {
+        if (extent != null) {
+            extent.flush();
+        }
+    }
 }

@@ -2,45 +2,53 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[<br><img src='screenshots/.\test-output\screenshots\20250112_201002.png' height='300' width='300'/><br>]]>
+      <![CDATA[<br><img src='screenshots/.\test-output\screenshots\20250113_011358.png' height='300' width='300'/><br>]]>
     </line>
     <line>
-      <![CDATA[<br><img src='screenshots/.\test-output\screenshots\20250112_201003.png' height='300' width='300'/><br>]]>
+      <![CDATA[<br><img src='screenshots/.\test-output\screenshots\20250113_011359.png' height='300' width='300'/><br>]]>
     </line>
     <line>
-      <![CDATA[<br><img src='screenshots/.\test-output\screenshots\20250112_201004.png' height='300' width='300'/><br>]]>
+      <![CDATA[<br><img src='screenshots/.\test-output\screenshots\20250113_011404.png' height='300' width='300'/><br>]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-01-12T20:09:12 IST" name="Default suite" finished-at="2025-01-12T20:10:04 IST" duration-ms="52832">
+  <suite started-at="2025-01-13T01:12:59 IST" name="Default suite" finished-at="2025-01-13T01:14:05 IST" duration-ms="65377">
     <groups>
     </groups>
-    <test started-at="2025-01-12T20:09:12 IST" name="Default test" finished-at="2025-01-12T20:10:04 IST" duration-ms="52832">
+    <test started-at="2025-01-13T01:12:59 IST" name="Default test" finished-at="2025-01-13T01:14:05 IST" duration-ms="65377">
       <class name="tests.Tests">
-        <test-method is-config="true" signature="testsetUp()[pri:0, instance:tests.Tests@1cf6d1be]" started-at="2025-01-12T20:09:12 IST" name="testsetUp" finished-at="2025-01-12T20:09:22 IST" duration-ms="10096" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.Tests@8519cb4]" started-at="2025-01-13T01:12:59 IST" name="setUp" finished-at="2025-01-13T01:13:00 IST" duration-ms="347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="testsetUp()[pri:0, instance:tests.Tests@8519cb4]" started-at="2025-01-13T01:13:00 IST" name="testsetUp" finished-at="2025-01-13T01:13:12 IST" depends-on-methods="tests.Reports.setUp" duration-ms="12329" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testsetUp -->
-        <test-method signature="pagesetup()[pri:0, instance:tests.Tests@1cf6d1be]" started-at="2025-01-12T20:09:22 IST" name="pagesetup" finished-at="2025-01-12T20:09:24 IST" duration-ms="1874" status="PASS">
+        <test-method signature="pagesetup()[pri:0, instance:tests.Tests@8519cb4]" started-at="2025-01-13T01:13:12 IST" name="pagesetup" finished-at="2025-01-13T01:13:19 IST" duration-ms="7273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pagesetup -->
-        <test-method signature="search_items()[pri:0, instance:tests.Tests@1cf6d1be]" started-at="2025-01-12T20:09:24 IST" name="search_items" finished-at="2025-01-12T20:10:04 IST" duration-ms="40357" status="PASS">
+        <test-method signature="search_items()[pri:0, instance:tests.Tests@8519cb4]" started-at="2025-01-13T01:13:19 IST" name="search_items" finished-at="2025-01-13T01:14:04 IST" duration-ms="44600" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[<br><img src='screenshots/.\test-output\screenshots\20250112_201002.png' height='300' width='300'/><br>]]>
+              <![CDATA[<br><img src='screenshots/.\test-output\screenshots\20250113_011358.png' height='300' width='300'/><br>]]>
             </line>
             <line>
-              <![CDATA[<br><img src='screenshots/.\test-output\screenshots\20250112_201003.png' height='300' width='300'/><br>]]>
+              <![CDATA[<br><img src='screenshots/.\test-output\screenshots\20250113_011359.png' height='300' width='300'/><br>]]>
             </line>
             <line>
-              <![CDATA[<br><img src='screenshots/.\test-output\screenshots\20250112_201004.png' height='300' width='300'/><br>]]>
+              <![CDATA[<br><img src='screenshots/.\test-output\screenshots\20250113_011404.png' height='300' width='300'/><br>]]>
             </line>
           </reporter-output>
         </test-method> <!-- search_items -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.Tests@1cf6d1be]" started-at="2025-01-12T20:10:04 IST" name="teardown" finished-at="2025-01-12T20:10:04 IST" duration-ms="454" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.Tests@8519cb4]" started-at="2025-01-13T01:14:04 IST" name="teardown" finished-at="2025-01-13T01:14:04 IST" duration-ms="430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.Tests@8519cb4]" started-at="2025-01-13T01:14:04 IST" name="tearDown" finished-at="2025-01-13T01:14:05 IST" depends-on-methods="tests.BaseClass.teardown" duration-ms="351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- tests.Tests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

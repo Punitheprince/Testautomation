@@ -12,9 +12,9 @@ public class Tests extends Search_page
 	public void Search_page_test() throws InterruptedException, IOException
 	{
 		
+		
 		Search.pagesetup();
 		Search.search_items();
-		
 		
 	}
 	
